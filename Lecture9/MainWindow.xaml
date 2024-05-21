@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:Lecture9"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="gridMain" Background="White">
+        <CheckBox x:Name="chkBox1" Content="CheckBox1" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBox2" Content="CheckBox2" HorizontalAlignment="Left" Margin="107,62,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioBtn1" GroupName = "Practice" Content="RadioButton1" HorizontalAlignment="Left" Margin="25,82,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioBtn2" GroupName = "Practice" Content="RadioButton2" HorizontalAlignment="Left" Margin="121,82,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPractice" Content="Check Status" HorizontalAlignment="Left" Margin="25,116,0,0" VerticalAlignment="Top" Click="btnPractice_Click"/>
+        <Label Content="Practice" HorizontalAlignment="Left" Margin="27,31,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="lblStatus" Content="" HorizontalAlignment="Left" Margin="238,198,0,0" VerticalAlignment="Top" Width="210" Height="152" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+        <Rectangle HorizontalAlignment="Left" Height="120" Margin="14,26,0,0" Stroke="Black" VerticalAlignment="Top" Width="210"/>
+        <Label x:Name="lblPart2" Content="Part 2: Real World" HorizontalAlignment="Left" Margin="246,31,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxName" HorizontalAlignment="Left" Margin="298,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="249,56,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBoxOvernightDelivery" Content="Overnight Delivery" HorizontalAlignment="Left" Margin="262,89,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBoxPerishable" Content="Is Perishable" HorizontalAlignment="Left" Margin="262,109,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="139" Margin="238,26,0,0" Stroke="Black" VerticalAlignment="Top" Width="207"/>
+        <Button x:Name="btnPart2" Content="Check Status" HorizontalAlignment="Left" Margin="250,131,0,0" VerticalAlignment="Top" Click="btnPart2_Click"/>
+        <Label Content="Part 3: Themes" HorizontalAlignment="Left" Margin="474,31,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="139" Margin="461,26,0,0" Stroke="Black" VerticalAlignment="Top" Width="125"/>
+        <RadioButton x:Name="radioButtonBlue" Content="Blue" GroupName="Themes" HorizontalAlignment="Left" Margin="476,61,0,0" VerticalAlignment="Top" Checked="radioButtonBlue_Checked"/>
+        <RadioButton x:Name="radioButtonRed" Content="Red" GroupName="Themes" HorizontalAlignment="Left" Margin="476,85,0,0" VerticalAlignment="Top" Checked="radioButtonRed_Checked"/>
+        <RadioButton x:Name="radioButtonGreen" Content="Green" GroupName="Themes" HorizontalAlignment="Left" Margin="476,109,0,0" VerticalAlignment="Top" Checked="radioButtonGreen_Checked"/>
+        <RadioButton x:Name="radioButtonYellow" Content="Yellow" GroupName="Themes" HorizontalAlignment="Left" Margin="474,134,0,0" VerticalAlignment="Top" Checked="radioButtonYellow_Checked"/>
 
     </Grid>
 </Window>
